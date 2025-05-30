@@ -6,7 +6,11 @@
     display: flex;
     margin-bottom: 20px;
 }
-
+.image-container{
+    width: 40px;
+    height: 40px;
+    display: flex;
+}
 .message .image-container {
     width: 50px;
     align-items: flex-start;
@@ -32,11 +36,6 @@
     font-size: 14px;
 }
 
-.send-message {
-    background: #3F51B5;
-    padding: 10px;
-    display: flex;
-}
 
 .send-message input {
     width: 100%;

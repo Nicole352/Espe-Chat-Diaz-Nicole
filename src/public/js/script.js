@@ -9,20 +9,20 @@ send.addEventListener("click", () => {
   message.value = "";
 });
 
+
 socket.on("message", ({ user, message }) => {
   const msg = document.createRange().createContextualFragment(`
-        <div class="message">
-                <div class="image-container">
-                    <img src="/img/perfil.jpg">
-                </div>
-                <div class="message-body">
-                    <div class="user-info">
-                        <span class="username">${user}</span>
-                        <span class="time">Hace 1 minuto</span>
-                    </div>
-                    <p>${message}</p>
-                </div>
-            </div>
-        `);
+    <div class="message fade-in-up d-flex align-items-start mb-3">
+      <div class="image-container me-2">
+        <img src="/img/perfil2.jpeg" class="rounded-circle" style="width: 40px;" alt="User" />
+      </div>
+      <div class="message-body">
+        <div class="user-info text-primary fw-bold">
+          ${user} <span class="time text-muted small ms-2">Hace 1 minuto</span>
+        </div>
+        <p class="text-dark">${message}</p>
+      </div>
+    </div>
+  `);
   allMessages.append(msg);
 });
