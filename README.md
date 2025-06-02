@@ -2,14 +2,25 @@
 
 **Introducción**
 
-**NicoChat** es una aplicación de mensajería en tiempo real desarrollada con tecnologías modernas como **Express**, 
-**Socket.IO** y **Bootstrap 5**. El objetivo del proyecto es demostrar la implementación de comunicación bidireccional 
-en tiempo real mediante WebSockets, permitiendo que múltiples usuarios puedan conectarse a una sala de chat, intercambiar 
-mensajes instantáneamente y visualizar en tiempo real los aportes de cada participante.
+**NicoChat** es una aplicación de mensajería en tiempo real desarrollada con tecnologías modernas como **Express**, **Socket.IO** y **Bootstrap 5**. Su principal objetivo es demostrar cómo implementar comunicación bidireccional usando **WebSockets**, permitiendo a múltiples usuarios conectarse simultáneamente, intercambiar mensajes y visualizar cambios en tiempo real dentro de una sala de chat.
 
-Este proyecto surge como parte del aprendizaje práctico en programación web y redes, con un enfoque en mejorar la interacción
-del usuario a través de un diseño atractivo, limpio y funcional, especialmente adaptado para dispositivos móviles y escritorios. 
-El diseño incorpora una paleta de colores cálidos (tonos rosados), íconos intuitivos y una estructura visual amigable.
+Este proyecto prioriza tanto la funcionalidad técnica como la experiencia del usuario. La interfaz se diseñó con una estética amigable, adaptable a móviles y escritorio, usando tonos rosados suaves e íconos intuitivos.
+
+**Funcionalidades principales**
+
+- ✅ **Conexión en tiempo real** entre múltiples usuarios utilizando **Socket.IO**.
+- 👥 **Lista dinámica de usuarios conectados**, que se actualiza en tiempo real.
+- 🛎️ **Notificación cuando un usuario se une** al chat, visible para todos los participantes.
+- 🚪 **Notificación cuando un usuario abandona** el chat.
+- 💬 **Envío y recepción de mensajes instantáneos**, visibles para todos los usuarios conectados.
+- 🧑‍🎤 **Identificación de usuarios por nombre**, solicitado al ingresar.
+- 🖼️ **Mensajes estilizados** con nombre, hora de envío, avatar redondo y diseño limpio.
+- 📱 **Diseño responsive**, optimizado para móviles y pantallas de escritorio.
+- 🎨 Interfaz moderna con **Bootstrap 5**, íconos visuales y animaciones suaves.
+- 🧹 **Autolimpieza del input** después de enviar un mensaje.
+- 📡 **Manejo de eventos WebSocket** como `connection`, `disconnect`, `chat message`, entre otros.
+- 🔒 **Validación básica** para evitar mensajes vacíos.
+
 
 **Instrucciones para ejecutar el proyecto localmente**
 
@@ -28,32 +39,39 @@ npm start
 http://localhost:3000
 
 
-**Mejoras de diseño y características adicionales**
-Se realizaron múltiples mejoras con respecto a un diseño base de chat:
+**Diseño e Interfaz**
 
-*Diseño en tonos rosa utilizando Bootstrap 5 para una interfaz moderna y estética.
-*Avatares redondos personalizados junto al nombre de usuario.
-*Diseño responsive, adaptado a dispositivos móviles.
-*Interfaz limpia, centrada y amigable con íconos y animaciones sutiles.
+🎀 Paleta en tonos rosados para una interfaz suave y estética.
+🧑‍🎨 Avatares circulares personalizados junto al nombre del usuario.
+💻 Diseño adaptable (responsive) para móviles, tablets y computadoras.
+🧼 Interfaz ordenada, amigable y centrada, con animaciones sutiles.
+🎯 Uso de íconos y tipografía clara para facilitar la lectura de mensajes.
 
 **Capturas de pantalla**
-Inicio del chat:
+Formulario de ingreso:
+
 ![image](https://github.com/user-attachments/assets/519f0119-687b-4953-9342-f0c1187fa9cb)
 
 Chat en funcionamiento:
-![image](https://github.com/user-attachments/assets/c0f79b97-ec04-4311-9b9f-6c8a391eb57b)
+
+![image](https://github.com/user-attachments/assets/b6f4d2f3-f839-455f-b9b0-e8f8efdd2413)
+
+Notificacion de union o salida del chat:
+
+![image](https://github.com/user-attachments/assets/fa9e66cb-9eb6-47a2-921d-b84926b48289)
+
+Lista de usuarios conectados: 
+
+![image](https://github.com/user-attachments/assets/fc7d9c0c-e140-49a9-a900-1d15102e421e)
+
 
 **Conclusiones**
 
-El desarrollo de NicoChat permitió aplicar en la práctica conceptos fundamentales de la programación en tiempo real, 
-el trabajo con eventos y la interacción cliente-servidor. Además de la funcionalidad técnica, se le dio especial énfasis 
-a la experiencia del usuario mediante una interfaz accesible, moderna y visualmente atractiva.
+El desarrollo de NicoChat permitió aplicar conocimientos sobre eventos WebSocket, interacción cliente-servidor, y diseño responsive. Además de su funcionalidad, se priorizó una experiencia visual atractiva y fácil de usar.
 
-Se comprobó la eficacia de Socket.IO para la comunicación en tiempo real y se fortalecieron habilidades en el uso de Express 
-como entorno backend. Las decisiones de diseño estético no fueron solo decorativas, sino pensadas para generar comodidad a los usuarios finales.
+Se comprobó la eficacia de Socket.IO como solución para comunicación en tiempo real, y se fortalecieron habilidades en el uso de Express.js como servidor backend. Las decisiones de diseño y estructura también reflejan buenas prácticas de codificación, documentación y modularidad.
 
-El proyecto también fomenta buenas prácticas de organización del código, documentación y trabajo con dependencias externas, consolidando 
-una base sólida para futuros desarrollos web colaborativos.
+Este proyecto establece una base sólida para futuras aplicaciones web colaborativas, con posibilidad de escalar e integrar más funciones como autenticación, historial de mensajes y salas múltiples.
 
 **Referencias**
 
